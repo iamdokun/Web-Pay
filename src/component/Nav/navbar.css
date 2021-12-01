@@ -1,0 +1,120 @@
+
+.navbar-wrap {
+    background-color: #000;
+    height: 80px;
+    /* margin-top: -80px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+/* .scrollNav {
+    background: #000;
+}
+.notScrollNav {
+    background: transparent;
+} */
+@media (max-width: 960px) {
+    .navbar-wrap {
+        transition: 0.8s all ease;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1100px;
+}
+.logo {
+    justify-content: flex-start;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+.logo .logo-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.mobile-icon {
+    display: none;
+}
+@media (max-width:768px) {
+    .mobile-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+    } 
+    h4 {
+        color: #fff;
+    }
+}
+.menu-wrap {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-right: -22px;
+}
+@media (max-width: 768px) {
+     .menu-wrap {
+        display: none;
+        background-color: aliceblue;
+    }
+}
+.menu-wrap li {
+    height: 80px;
+}
+.links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+}
+.active {
+    border-bottom: 3px solid #01bf71;
+}
+.nav-btn {
+    display: flex;
+    align-items: center;
+}
+@media (max-width:768px) {
+    .nav-btn {
+        display: none;
+    }
+}
+.sign-in {
+    border-radius: 50px;
+    background-color: #01bf71;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+.sign-in:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+    color: #010606;
+}
